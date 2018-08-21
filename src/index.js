@@ -10,7 +10,7 @@ const addComponent = function () {
         wwLib.wwObject.registerContentType(
             name,
             {
-                type: wwObjectName,
+                type: name,
                 data: {
                     size: "medium" // xbig, big, medium, small, xsmall
                 }

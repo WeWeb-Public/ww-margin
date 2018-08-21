@@ -1,5 +1,5 @@
 <template>
-	<div class="margin" v-bind:style="{ height: height + 'px' }"></div>
+	<div class="ww-margin" v-bind:style="{ height: height + 'px' }"></div>
 </template>
  
 
@@ -17,9 +17,7 @@ export default {
 		}
 	},
 	data() {
-		return {
-			height: null
-		};
+		return {};
 	},
 	computed: {
 		height() {
@@ -48,13 +46,13 @@ export default {
 	},
 	methods: {},
 	mounted() {
-		wwLib.wwElementsStyle.applyAllStyles({
-			wwObject: this.wwObject,
-			lastWwObject: null,
-			element: this.$el,
-			noClass: false,
-			noAnim: this.wwAttrs.wwNoAnim,
-		});
+		// wwLib.wwElementsStyle.applyAllStyles({
+		// 	wwObject: this.wwObject,
+		// 	lastWwObject: null,
+		// 	element: this.$el,
+		// 	noClass: false,
+		// 	noAnim: this.wwAttrs.wwNoAnim,
+		// });
 	}
 };
 </script>
