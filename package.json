@@ -1,6 +1,7 @@
 {
-  "name": "ww-color",
+  "name": "ww-margin",
   "version": "0.1.0",
+  "type": "wwObject",
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.config.js -p",
