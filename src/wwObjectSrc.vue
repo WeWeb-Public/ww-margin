@@ -7,10 +7,7 @@
 export default {
 	name: "ww-margin",
 	props: {
-		wwObject: {
-			type: Object,
-			default: {}
-		},
+		wwObjectRef: Object,
 		wwAttrs: {
 			type: Object,
 			default: {}
@@ -20,6 +17,10 @@ export default {
 		return {};
 	},
 	computed: {
+		wwObject() {
+			//return this.wwObjectRef.wwGet();
+			return this.$store.state.wwObjects[this.wwObjectRef.uniqueId];
+		},
 		height() {
 			switch (this.wwObject.content.data.size) {
 				case "xsmall":
@@ -53,7 +54,7 @@ export default {
 		// 	noClass: false,
 		// 	noAnim: this.wwAttrs.wwNoAnim,
 		// });
-		
+
 		this.$emit('ww-loaded', this);
 	}
 };
