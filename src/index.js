@@ -1,4 +1,4 @@
-import wwObject from './wwObjectSrc.vue'
+import wwObject from './wwObjectMargin.vue'
 
 const name = "ww-margin";
 const wwEnableMetrics = false;
