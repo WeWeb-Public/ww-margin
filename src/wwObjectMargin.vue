@@ -15,10 +15,12 @@ export default {
     },
     data() {
         return {
-            wwObject: this.wwObjectCtrl.get(),
         };
     },
     computed: {
+        wwObject() {
+            return this.wwObjectCtrl.get();
+        },
         height() {
             switch (this.wwObject.content.data.size) {
                 case "xsmall":
