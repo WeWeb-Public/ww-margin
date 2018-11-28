@@ -1,7 +1,6 @@
 import wwObject from './wwObjectMargin.vue'
 
 const name = "ww-margin";
-const wwEnableMetrics = false;
 
 const addComponent = function () {
     if (window.vm) {
@@ -13,7 +12,11 @@ const addComponent = function () {
                     size: "medium" // xbig, big, medium, small, xsmall
                 }
             },
-            enableMetrics: wwEnableMetrics,
+            upsales: {
+                wwAnalytics: {
+                    click: false
+                }
+            },
             /* wwManager:start */
             cmsOptions: {
             }
