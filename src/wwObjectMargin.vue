@@ -5,7 +5,7 @@
 
 <script>
 export default {
-    name: "ww-margin",
+    name: "__COMPONENT_NAME__",
     props: {
         wwObjectCtrl: Object,
         wwAttrs: {
@@ -62,11 +62,11 @@ export default {
 
 <style scoped>
 .ww-margin {
-  width: 100%;
+    width: 100%;
 }
 
 .editing .ww-margin {
-  border: 2px dashed grey;
-  background-color: #86868645;
+    border: 2px dashed grey;
+    background-color: #86868645;
 }
 </style>
