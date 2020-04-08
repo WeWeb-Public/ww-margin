@@ -1,0 +1,15 @@
+{
+	"componentPath": "./src/wwObjectMargin.vue",
+	"content": {
+		"type": "ww-margin",
+		"data": {
+			"size": "medium"
+		}
+	},
+	"upsales": {
+		"wwAnalytics": {
+			"click": false
+		}
+	},
+	"cmsOptions": {}
+}
